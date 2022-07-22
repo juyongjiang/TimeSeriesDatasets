@@ -43,14 +43,14 @@ This dataset from loop detectors in the highway of Los Angeles County records fo
 
 ## Evaluation Metrics
 To evaluate the performance of models, there are three commonly used metrics, including **RMSE**, **MAE**, and **MAPE**.
-Suppose $\bm{X}=\{x_1, ..., x_n\}$ represents the ground truth, $\hat{\bm{X}}=\{\hat{x}_1, ..., \hat{x}_n\}$ represents the predicted
+Suppose $\textbf{X}=\{x_1, ..., x_n\}$ represents the ground truth, $\hat{\textbf{X}}=\{\hat{x}_1, ..., \hat{x}_n\}$ represents the predicted
 values, and $\Omega$ denotes the indices of observed samples, the metrics are defined as follows.
 * Mean Absolute Error (MAE):
-$\text{MAE}(\bm{X}, \hat{\bm{X}})  = \frac{1}{| \Omega |}  \sum_{i \in \Omega} |x_i - \hat{x}_i|$
+$\text{MAE}(\textbf{X}, \hat{\textbf{X}})  = \frac{1}{| \Omega |}  \sum_{i \in \Omega} |x_i - \hat{x}_i|$
 * Root Mean Square Error (RMSE):
-$\text{RMSE}(\bm{X}, \hat{\bm{X}}) = \sqrt{\frac{1}{| \Omega |} \sum_{i \in \Omega} (x_i - \hat{x}_i)^2}$
+$\text{RMSE}(\textbf{X}, \hat{\textbf{X}}) = \sqrt{\frac{1}{| \Omega |} \sum_{i \in \Omega} (x_i - \hat{x}_i)^2}$
 * Mean Absolute Percentage Error (MAPE):
-$\text{MAPE}(\bm{X}, \hat{\bm{X}})  = \frac{1}{| \Omega |}  \sum_{i \in \Omega} \left | \frac{x_i - \hat{x}_i}{x_i} \right|$
+$\text{MAPE}(\textbf{X}, \hat{\textbf{X}})  = \frac{1}{| \Omega |}  \sum_{i \in \Omega} \left | \frac{x_i - \hat{x}_i}{x_i} \right|$
 
 ## Reference
 - [1]. [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data)
