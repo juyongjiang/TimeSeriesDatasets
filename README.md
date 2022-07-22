@@ -43,7 +43,7 @@ This dataset from loop detectors in the highway of Los Angeles County records fo
 
 ## Evaluation Metrics
 To evaluate the performance of models, there are three commonly used metrics, including **RMSE**, **MAE**, and **MAPE**.
-Suppose $\textbf{X}={x_1, ..., x_n}$ represents the ground truth, $\hat{\textbf{X}}=\{\hat{x}_1, ..., \hat{x}_n\}$ represents the predicted
+Suppose $\textbf{X}=\{x_1, ..., x_n\}$ represents the ground truth, $\hat{\textbf{X}}=\{\hat{x}_1, ..., \hat{x}_n\}$ represents the predicted
 values, and $\Omega$ denotes the indices of observed samples, the metrics are defined as follows.
 * Mean Absolute Error (MAE):
 
