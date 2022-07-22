@@ -41,13 +41,20 @@ This dataset from loop detectors in the highway of Los Angeles County records fo
 
 ### Statistics of Datasets 
 
+## Evaluation Metrics
+To evaluate the performance of models, there are three commonly used metrics, including **RMSE**, **MAE**, and **MAPE**.
+Suppose $\bm{X}=\{x_1, ..., x_n\}$ represents the ground truth, $\hat{\bm{X}}=\{\hat{x}_1, ..., \hat{x}_n\}$ represents the predicted
+values, and $\Omega$ denotes the indices of observed samples, the metrics are defined as follows.
+* Mean Absolute Error (MAE):
+$\text{MAE}(\bm{X}, \hat{\bm{X}})  = \frac{1}{| \Omega |}  \sum_{i \in \Omega} |x_i - \hat{x}_i|$
+* Root Mean Square Error (RMSE):
+$\text{RMSE}(\bm{X}, \hat{\bm{X}}) = \sqrt{\frac{1}{| \Omega |} \sum_{i \in \Omega} (x_i - \hat{x}_i)^2}$
+* Mean Absolute Percentage Error (MAPE):
+$\text{MAPE}(\bm{X}, \hat{\bm{X}})  = \frac{1}{| \Omega |}  \sum_{i \in \Omega} \left | \frac{x_i - \hat{x}_i}{x_i} \right|$
+
 ## Reference
-[1]. [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data)
-
-[2]. [Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks](https://arxiv.org/abs/1703.07015)
-
-[3]. [Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://openreview.net/forum?id=SJiHXGWAZ)
-
-[4]. [Multi-Range Attentive Bicomponent Graph Convolutional Network for Traffic Forecasting](https://arxiv.org/abs/1911.12093)
-
-[5]. [Are Transformers Effective for Time Series Forecasting?](https://arxiv.org/abs/2205.13504)
+- [1]. [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data)
+- [2]. [Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks](https://arxiv.org/abs/1703.07015)
+- [3]. [Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://openreview.net/forum?id=SJiHXGWAZ)
+- [4]. [Multi-Range Attentive Bicomponent Graph Convolutional Network for Traffic Forecasting](https://arxiv.org/abs/1911.12093)
+- [5]. [Are Transformers Effective for Time Series Forecasting?](https://arxiv.org/abs/2205.13504)
