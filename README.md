@@ -1,5 +1,5 @@
 # Datasets for Time Series Forecasting
-> Time series are ubiquitous in today’s data-driven world. Given historical data, time series forecasting (TSF) is a long-standing task and aims to predict future multi-step data. It has a wide range of applications, including but not limited to traffic flow estimation, energy management, economics investment, weather forecasting, and disease predictions. 
+> Time series are ubiquitous in today’s data-driven world. Given historical data, time series forecasting (TSF) as a long-standing task aims to predict future multi-step data. It has a wide range of applications, including but not limited to traffic flow estimation, energy management, economics investment, weather forecasting, and disease predictions. 
 
 This repository collects public benchmark datasets for Time Series Forecasting (TSF), in which all the datasets are well pre-processed and can be used directly. According to whether to consider the correlations between sensors (nodes), we roughly divide them into two categories as follows: 
 
