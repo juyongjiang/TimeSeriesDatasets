@@ -26,20 +26,43 @@ This dataset describes the ratio of <u>patients seen with influenza-like illness
 
 ## Considering Correlation Between Sensors
 ### Brief Introduction of Datasets
-- [PEMS03]():
-This dataset describes xxx.
-- [PEMS04]():
-This dataset describes xxx.
-- [PEMS07]():
-This dataset describes xxx.
-- [PEMS08]():
-This dataset describes xxx.
+
+- PEMS
+
+    PEMS03, PEMS04, PEMS07 and PEMS08 are collected by California Transportation Agencies (CalTrans) Performance Measurement System (PeMS) in real time every 30 seconds. The collected data is aggregated to 5 minutes, which means there are 12 points in the flow data for each hour. They can be downloaded from this [Repo](https://github.com/guoshnBJTU/ASTGNN/tree/main/data).
+
+    - [PEMS03]():
+    It contaions three months of statistics on traffic flow ranging from Sept. 1st 2018 to Nov. 30th 2018, including 358 sensors. The total number of observed traffic data points is 26,208.
+
+    - [PEMS04]():
+    It contaions two months of statistics on traffic flow, traffic speed and traffic occupancy rate ranging from Jan. 1st 2018 to Feb. 28th 2018, including 307 sensors. The total number of observed traffic data points is 16,992.
+
+    - [PEMS07]():
+    It contaions three months of statistics on traffic flow ranging from May 1st 2017 to Aug. 31st 2017, including 883 sensors. The total number of observed traffic data points is 28,224.
+
+    - [PEMS08]():
+    It contaions three months of statistics on traffic flow, traffic speed and traffic occupancy rate ranging from July 1st 2016 to Aug. 31st 2016, including 170 sensors. The total number of observed traffic data points is 17,856.
+
 - [PEMS-BAY]():
 This dataset is collected by California Transportation Agencies (CalTrans) Performance Measurement System (PeMS), and contains six months of statistics on traffic speed, ranging from Jan 1st 2017 to May 31th 2017, including 325 sensors in the Bay area. The total number of observed traffic data points is 16,937,179.
 - [METR-LA]():
 This dataset from loop detectors in the highway of Los Angeles County records four `months` of statistics on traffic speed, ranging from Mar 1st 2012 to Jan 30th 2012, including 207 sensors on the highways of Los Angeles County. The total number of observed traffic data points is 6,519,002.
 
 ### Statistics of Datasets 
+- PEMS
+
+    | Dataset | PEMS03    | PEMS04   | PEMS07 | PEMS08 |
+    | ------- | --------- | -------- | ------ | ------ |
+    | # of nodes |358|307|883|170|
+    | # of timesteps |26,208|16,992|28,224|17,856|
+    | # Granularity| 5 mins|5 mins|5 mins|5 mins|
+    | # Start time|Sept. 1st 2018|Jan. 1st 2018|May 1st 2017|July 1st 2016|
+    | # End time |Nov. 30th 2018|Feb. 28th 2018|Aug. 31st 2017|Aug. 31st 2016|
+    | Signals|F|F,S,O|F|F,S,O|
+
+    In column titled “Signals”, F represents traffic flow, S represents traffic speed, and O represents traffic occupancy rate.
+
+
 
 ## Evaluation Metrics
 To evaluate the performance of models, there are three commonly used metrics, including **RMSE**, **MAE**, and **MAPE**.
@@ -61,3 +84,5 @@ $\text{MAPE}(\textbf{X}, \hat{\textbf{X}})  = \frac{1}{| \Omega |}  \sum_{i \in 
 - [3]. [Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://openreview.net/forum?id=SJiHXGWAZ)
 - [4]. [Multi-Range Attentive Bicomponent Graph Convolutional Network for Traffic Forecasting](https://arxiv.org/abs/1911.12093)
 - [5]. [Are Transformers Effective for Time Series Forecasting?](https://arxiv.org/abs/2205.13504)
+- [6]. [Spatial-Temporal Synchronous Graph Convolutional Networks: A New Framework for Spatial-Temporal Network Data Forecasting](https://ojs.aaai.org/index.php/AAAI/article/view/5438)
+- [7]. [Learning Dynamics and Heterogeneity of Spatial-Temporal Graph Data for Traffic Forecasting](https://ieeexplore.ieee.org/document/9346058)
